@@ -92,7 +92,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/projects/
-    - assets/resume/Seyadubabuali_flutter_android_9_years_Resume.pdf
+    - assets/resume/seyadubabuali_flutter_android_9_years_resume.pdf
     - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see

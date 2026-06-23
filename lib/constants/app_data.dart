@@ -11,7 +11,7 @@ class AppData {
   static const String email        = 'babu.soft076@email.com';
   static const String github       = 'https://github.com/seyadubabu';
   static const String linkedIn     = 'https://www.linkedin.com/in/seyadubabuali';
-  static const String resumeUrl    = 'assets/resume/Seyadubabuali_flutter_android_9_years_Resume.pdf';
+  static const String resumeUrl    = 'assets/resume/seyadubabuali_flutter_android_9_years_resume.pdf';
   static const String profileImage = 'assets/images/profile.jpg';
 
   static const List<Map<String, dynamic>> skills = [

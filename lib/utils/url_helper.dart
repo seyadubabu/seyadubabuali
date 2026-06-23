@@ -1,10 +1,15 @@
+import 'package:flutter/foundation.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class UrlHelper {
   static Future<void> openUrl(String url) async {
     final uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
+    if (kIsWeb) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } else {
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri, mode: LaunchMode.externalApplication);
+      }
     }
   }
 
@@ -14,7 +19,7 @@ class UrlHelper {
   }
 
   static Future<void> openResume() async {
-    await openUrl('assets/resume/resume.pdf');
+    await openUrl('assets/resume/seyadubabuali_flutter_android_9_years_resume.pdf');
   }
 }
 
